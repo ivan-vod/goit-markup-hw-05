@@ -724,7 +724,7 @@ button {
     width: 100%;
     height: 100%;
     background-color: rgb(var(--NAVY-BLUE) / 40%);
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
 
     opacity: 0;
     visibility: hidden;
@@ -785,11 +785,11 @@ button {
 
 .modal-btn:hover,
 .modal-btn:focus {
-    /* stroke: rgb(var(--WHITE)); */
-    fill: rgb(var(--WHITE));
+    
     background-color: #404bbf;
     border: none;
-    /* border-color: transparent; */
+    fill: rgb(var(--WHITE));
+    
 }
 
 .modal-btn-icon {
@@ -931,11 +931,11 @@ button {
     fill: transparent;
 }
 
-input[type="checkbox"]:checked ~ .checkbox {
+/* input[type="checkbox"]:checked ~ .checkbox {
     background-color: rgb(var(--OCEAN));
     border: none;
     fill: rgb(var(--CLOUD));
-    /* border-color: transparent; */
+    
 }
 
 input[type="checkbox"]:focus-visible + .checkbox {
@@ -943,13 +943,20 @@ input[type="checkbox"]:focus-visible + .checkbox {
     outline-offset: 2px;
 }
 
-.checkbox-icon {
-    opacity: 0;
-}
-
 input[type="checkbox"]:checked + .checkbox + .checkbox-icon {
     opacity: 1;
     fill: rgb(var(--CLOUD));
+}
+
+
+.checkbox-icon {
+    opacity: 0;
+} */
+
+input[type="checkbox"]:checked + .form-agreement + .checkbox {
+    fill: rgb(var(--CLOUD));
+    border: none;
+    background-color: rgb(var(--OCEAN));
 }
 
 .form-agreement-text {
