@@ -787,8 +787,9 @@ button {
 .modal-btn:focus {
     /* stroke: rgb(var(--WHITE)); */
     fill: rgb(var(--WHITE));
-    background-color: rgb(64, 75, 191);
-    border-color: transparent;
+    background-color: #404bbf;
+    border: none;
+    /* border-color: transparent; */
 }
 
 .modal-btn-icon {
@@ -893,7 +894,7 @@ button {
 }
 
 .form-comment:focus {
-    border-color: rgb(var(--IRIS));
+    border-color: #4D5AE5;
 }
 
 .form-comment::placeholder {
