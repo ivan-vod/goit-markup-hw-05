@@ -63,7 +63,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn" type="button">Order Service</button>
+          <button class="btn js-open-modal" type="button">Order Service</button>
         </div>
       </section>
       <!-- #endregion Hero -->
@@ -76,7 +76,7 @@
           <ul class="principles-list">
             <li class="principles-item">
               <div class="principles-icon-wrapper">
-                <svg class="" width="64" height="64">
+                <svg class width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -88,7 +88,7 @@
             </li>
             <li class="principles-item">
               <div class="principles-icon-wrapper">
-                <svg class="" width="64" height="64">
+                <svg class width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -100,7 +100,7 @@
             </li>
             <li class="principles-item">
               <div class="principles-icon-wrapper">
-                <svg class="" width="64" height="64">
+                <svg class width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -112,7 +112,7 @@
             </li>
             <li class="principles-item">
               <div class="principles-icon-wrapper">
-                <svg class="" width="64" height="64">
+                <svg class width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -489,5 +489,106 @@
       </div>
     </footer>
     <!-- #endregion Footer -->
+
+    <!-- #region Modal window -->
+    <div class="backdrop js-modal">
+      <div class="modal">
+        <button class="modal-btn js-close-modal" type="button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross-close"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="order-form" name="order-form">
+          <div class="form-wrapper">
+            <label class="form-label" for="userName">Name</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                id="userName"
+                name="userName"
+                type="text"
+                required
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="userPhone">Phone</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                id="userPhone"
+                name="userPhone"
+                type="tel"
+                required
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="userEmail">Email</label>
+            <div class="form-field">
+              <input
+                class="form-input"
+                id="userEmail"
+                name="userEmail"
+                type="email"
+                required
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="userComment">Comment</label>
+            <textarea
+              class="form-comment"
+              id="userComment"
+              name="userComment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <label class="form-agreement">
+            <input
+              class="visually-hidden"
+              name="userAgreement"
+              type="checkbox"
+              value="true"
+              checked
+              required
+            />
+            <span class="checkbox">
+              <svg class="checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+            <span class="form-agreement-text">
+              I accept the terms and conditions of the
+              <span class="form-agreement-link">
+                <a class href="#" target="_blank" rel="noopener norefenrer">
+                  Privacy Policy
+                </a>
+              </span>
+            </span></label
+          >
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion Modal window -->
   </body>
 </html>
