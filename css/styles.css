@@ -797,6 +797,10 @@ button {
     transition-property: fill;
 }
 
+.modal-btn:hover .modal-btn-icon {
+    fill: rgb(var(--WHITE));
+}
+
 .modal-caption {
     color: rgb(var(--NAVY-BLUE));
     text-align: center;
@@ -927,7 +931,7 @@ button {
     fill: transparent;
 }
 
-input[type="checkbox"]:checked + .checkbox {
+input[type="checkbox"]:checked ~ .checkbox {
     background-color: rgb(var(--OCEAN));
     border: none;
     fill: rgb(var(--CLOUD));
