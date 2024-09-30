@@ -959,6 +959,12 @@ input[type="checkbox"]:checked + .form-agreement + .checkbox {
     background-color: rgb(var(--OCEAN));
 }
 
+.agreement-check:checked + .form-agreement > .checkbox {
+    fill: rgb(var(--CLOUD));
+    border: none;
+    background-color: rgb(var(--OCEAN));
+}
+
 .form-agreement-text {
     color: rgb(var(--LIGHT-SLATE));
 
