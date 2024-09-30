@@ -931,27 +931,12 @@ button {
     fill: transparent;
 }
 
-/* input[type="checkbox"]:checked ~ .checkbox {
-    background-color: rgb(var(--OCEAN));
+
+.agreement-check:checked + .form-agreement > .checkbox {
+    fill: rgb(var(--CLOUD));
     border: none;
-    fill: rgb(var(--CLOUD));
-    
+    background-color: rgb(var(--OCEAN));
 }
-
-input[type="checkbox"]:focus-visible + .checkbox {
-    outline: 2px solid rgb(var(--IRIS));
-    outline-offset: 2px;
-}
-
-input[type="checkbox"]:checked + .checkbox + .checkbox-icon {
-    opacity: 1;
-    fill: rgb(var(--CLOUD));
-}
-
-
-.checkbox-icon {
-    opacity: 0;
-} */
 
 input[type="checkbox"]:checked + .form-agreement + .checkbox {
     fill: rgb(var(--CLOUD));
@@ -959,11 +944,6 @@ input[type="checkbox"]:checked + .form-agreement + .checkbox {
     background-color: rgb(var(--OCEAN));
 }
 
-.agreement-check:checked + .form-agreement > .checkbox {
-    fill: rgb(var(--CLOUD));
-    border: none;
-    background-color: rgb(var(--OCEAN));
-}
 
 .form-agreement-text {
     color: rgb(var(--LIGHT-SLATE));
